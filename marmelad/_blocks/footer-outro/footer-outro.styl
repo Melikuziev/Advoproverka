@@ -1,0 +1,29 @@
+.footer-outro
+	display flex
+	justify-content space-between
+	align-items center
+
+	&__first-text,
+	&__second-text
+		margin 0px 0px 0px 0px
+		font-size 14px
+		line-height 16px
+		color rgba(245, 245, 245, 0.54)
+
+	&__first-text
+		width 100%
+
+@media (min-width: 360px)
+	.footer-outro
+		&__first-text
+			max-width 149px
+
+@media (min-width: 480px)
+	.footer-outro
+		&__first-text
+			max-width 210px
+
+@media (min-width: 768px)
+	.footer-outro
+		&__first-text
+			max-width 458px

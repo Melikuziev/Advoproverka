@@ -308,6 +308,7 @@ template,
 }
 .footer__secondary {
   border-bottom: 1px solid rgba(255,255,255,0.2);
+  margin-bottom: 30px;
 }
 .header {
   background-color: #1e3685;
@@ -707,6 +708,21 @@ body {
   display: block;
   visibility: hidden;
   opacity: 0;
+}
+.footer-outro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-outro__first-text,
+.footer-outro__second-text {
+  margin: 0px 0px 0px 0px;
+  font-size: 14px;
+  line-height: 16px;
+  color: rgba(245,245,245,0.54);
+}
+.footer-outro__first-text {
+  width: 100%;
 }
 .footer-social-networks {
   display: flex;
@@ -1141,6 +1157,9 @@ body {
   .choose-lawyer__title {
     font-size: 18px;
   }
+  .footer-outro__first-text {
+    max-width: 149px;
+  }
   .main-inner__text {
     font-size: 18px;
   }
@@ -1158,6 +1177,9 @@ body {
   .faq__accordion {
     font-size: 20px;
     line-height: 130%;
+  }
+  .footer-outro__first-text {
+    max-width: 210px;
   }
   .lawyer-button {
     max-width: 320px;
@@ -1186,6 +1208,7 @@ body {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
+    margin-bottom: 20px;
   }
   .header {
     margin-bottom: 40px;
@@ -1315,6 +1338,9 @@ body {
     line-height: 18px;
     vertical-align: bottom;
   }
+  .footer-outro__first-text {
+    max-width: 458px;
+  }
   .footer-social-networks {
     margin: 0px 0px 20px 0px;
   }
@@ -1383,6 +1409,9 @@ body {
   }
 }
 @media (min-width: 1000px) {
+  .footer__secondary {
+    margin-bottom: 37px;
+  }
   .header {
     margin-bottom: 80px;
   }
