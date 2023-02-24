@@ -21,6 +21,24 @@
 		font-size 20px
 		line-height 23px
 		color #FAFAFA
+		&:hover span:before
+			visibility visible
+			opacity 1
+		span
+			display inline-block
+			position relative
+			&:before
+				content ''
+				transition all .3s ease
+				bottom -3px
+				left -2px
+				right -2px
+				position absolute
+				height 1px
+				background-color #fff
+				display block
+				visibility hidden
+				opacity 0
 
 @media (min-width: 768px)
 	.footer-main-nav
