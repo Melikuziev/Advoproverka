@@ -1,0 +1,33 @@
+.main-container
+	padding-left 20px
+	padding-right 20px
+
+.main-nav-mobile
+	margin-left -20px
+	margin-right -20px
+
+	&__items
+		list-style none
+		margin 0
+		padding 0
+		display flex
+		flex-direction column
+
+	&__item
+		border-bottom 1px solid #e0e0e0
+		margin-bottom 20px
+
+	&__link
+		display inline-block
+		margin-bottom 20px
+		text-decoration none
+		font-family 'Play'
+		font-weight 700
+		font-size 20px
+		line-height 110%
+		color #000000
+
+@media (min-width: 360px)
+	.main-nav-mobile
+		&__link
+			font-size 24px

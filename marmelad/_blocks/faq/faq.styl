@@ -1,0 +1,77 @@
+.faq
+	padding 56px 0
+	background-color #F2F8FC
+
+	&__title
+		margin 0px 0px 30px 0px
+
+	&__contentBx
+		padding 10px 20px 10px 20px
+		position relative
+		margin 0px 0px 20px 0px
+		background-color #fff
+		border-radius 10px
+
+	&__accordion
+		font-weight 700
+		font-size 20px
+		line-height 130%
+		color #0173C1
+		text-align left
+		margin 0px 0px 0px 0px
+		padding 10px 0px 10px 0px
+		border none
+		outline none
+		background-color #fff
+		position relative
+
+	&__panel
+		transition .3s
+		visibility hidden
+		opacity 0
+		height 0
+		overflow hidden
+		padding-bottom 10px
+
+	&__text
+		line-height 140%
+		margin 0px 0px 0px 0px
+
+@media (min-width: 480px)
+	.faq
+		&__accordion
+			font-size 20px
+			line-height 130%
+
+@media (min-width: 768px)
+	.faq
+		&__title
+			margin 0px 0px 23px 0px
+
+		&__contentBx
+			padding 14px 24px 0px 24px
+
+		&__accordion
+			line-height 150%
+			padding-bottom 14px
+
+		&__panel
+			padding-bottom 14px
+
+		&__text
+			line-height 150%
+
+@media (min-width: 1000px)
+	.faq
+		&__content
+			display flex
+			gap 20px
+
+		&__contentBx
+			&--margin-none
+				margin 0px 0px 0px 0px
+
+@media (min-width: 1200px)
+	.faq
+		&__title
+			margin 0px 0px 48px 0px

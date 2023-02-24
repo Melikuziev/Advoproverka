@@ -1,0 +1,59 @@
+---
+# JS-YAML demo
+# https://nodeca.github.io/js-yaml/
+page:
+	title: Домашняя страница
+	layout:
+		header: true
+		footer: true
+		left: false
+		right: false
+	# Массив хлебных крошек, от главной до текущей страницы
+	# Необходимо прописывать только имена файлов (шаблонов) страниц
+	# Названия и ссылки проставятся автоматически
+	crumbs: !!seq
+	- home
+body:
+	classes: home
+---
+
+{% extends 'app.html' %}
+
+{% block inlineStyles %}
+{% endblock %}
+
+{% block main %}
+
+<section>
+	{% include 'main-inner.html' %}
+</section>
+
+<section>
+	{% include 'choose-lawyer.html' %}
+</section>
+
+<section>
+	{% include 'choose-lawyer-right.html' %}
+</section>
+
+<section>
+	{% include 'check-lawyer.html' %}
+</section>
+
+<section>
+	{% include 'ranking-system.html' %}
+</section>
+
+<section>
+	{% include 'reviews.html' %}
+</section>
+
+<section>
+	{% include 'faq.html' %}
+</section>
+
+<section>
+	{% include 'check.html' %}
+</section>
+
+{% endblock %}

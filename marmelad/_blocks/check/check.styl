@@ -1,0 +1,73 @@
+.check
+	padding 56px 0
+
+	.check-button
+		margin 0
+
+	&__title
+		margin 0px 0px 30px 0px
+
+	&__left-side
+		display flex
+		flex-direction column
+		margin 0px 0px 20px 0px
+
+	&__right-side
+		display flex
+		align-items center
+		justify-content center
+
+	&__input
+		padding 13px 0 13px 15px
+		border 1px solid #CDD1D4
+		border-radius 5px
+		margin 0px 0px 15px 0px
+		font-size 17px
+		line-height 150%
+		color #999
+		&--margin
+			margin 0px 0px 40px 0px
+		&::placeholder
+			color inherit
+
+@media (min-width: 768px)
+	.check
+		&__content
+			display flex
+			gap 20px
+
+		&__left-side
+			width 100%
+			max-width 470px
+
+		&__right-side
+			width 100%
+			max-width 379px
+
+@media (min-width: 1000px)
+	.check
+		&__content
+			justify-content space-between
+
+		&__right-side
+			align-items start
+			max-width 470px
+
+@media (min-width: 1200px)
+	.check
+		&__left-side
+			max-width 600px
+
+		&__right-side
+			max-width 510px
+
+@media (min-width: 1400px)
+	.check
+		&__right-side
+			margin-right -80px
+
+@media (min-width: 1500px)
+	.check
+		&__right-side
+			margin-right -122px
+			max-width 585px

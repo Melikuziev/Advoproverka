@@ -1,0 +1,100 @@
+.choose-lawyer-right
+	background-color #0263B2
+	padding-top 56px
+	padding-bottom 56px
+
+	&__intro-title
+		color #fff
+		margin 0 0 30px 0
+
+	&__item
+		display flex
+		flex-direction column
+		background-color #fff
+		border-radius 10px
+		padding 20px
+		margin-bottom 20px
+
+	&__header
+		display flex
+		margin-bottom 10px
+		align-items center
+
+	&__icon
+		width 63px
+		height 63px
+		flex 0 0 auto
+		margin-right 10px
+
+	&__title
+		font-size 17px
+		line-height 120%
+		margin 0
+		color #B20237
+		span
+			color #000
+
+	&__text
+		color #000
+		line-height 140%
+		margin 0
+
+	&__outro
+		background-color #fff
+		display flex
+		padding 20px
+		border-radius 10px
+		align-items center
+
+	&__outro-icon
+		margin-right 10px
+		flex 0 0 auto
+
+	&__outro-text
+		font-weight 700
+		line-height 120%
+		color #1E3685
+		margin 0
+
+@media (min-width: 360px)
+	.choose-lawyer-right
+		&__title
+			font-size 18px
+
+		&__outro-text
+			font-size 18px
+
+@media (min-width: 768px)
+	.choose-lawyer-right
+		&__item
+			margin-bottom 24px
+			padding 24px 29px
+
+		&__icon
+			width 88px
+			height 88px
+
+		&__title
+			line-height 150%
+
+		&__text
+			line-height 150%
+
+		&__buttons
+			display flex
+			flex-direction row
+			justify-content center
+			align-items center
+
+		&__outro-text
+			line-height 150%
+
+@media (min-width: 1200px)
+	.choose-lawyer-right
+		&__intro-title
+			margin 0 0 40px 0
+
+.full-blue
+	box-shadow 0 0 0 100vmax #0263B2
+	clip-path inset(0 -100vmax)
+

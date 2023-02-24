@@ -1,0 +1,38 @@
+<div block="choose-lawyer" class="full-bleed">
+	{% include 'choose-lawyer-title.html' %}
+	<div elem="items">
+		<div elem="item">
+			<div elem="header">
+				<img elem="icon" src="img/lawyer-icon-1.svg" alt="lawyer-icon">
+				<h4 elem="title">Выбирайте юристов с наибольшим % побед <span>в судебных процессах</span></h4>
+			</div>
+			<p elem="text">
+				стаж, опыт, офис, костюм, связи и рекомендации — это не главное. Главное — выигрывает юрист суды или проигрывает. Какой % дел он выиграл
+			</p>
+		</div>
+
+		<div elem="item">
+			<div elem="header">
+				<img elem="icon" src="img/lawyer-icon-2.svg" alt="lawyer-icon">
+				<h4 elem="title">Выбирайте юристов с подтверждённым <span>судебным опытом</span></h4>
+			</div>
+			<p elem="text">
+				проведших много судебных процессов. Сравнивайте, какие юристы, не на словах, а в реальности, имеют больший судебный опыт.
+			</p>
+		</div>
+
+		<div elem="item">
+			<div elem="header">
+				<img elem="icon" src="img/lawyer-icon-3.svg" alt="lawyer-icon">
+				<h4 elem="title">Выбирайте юристов со специальзицией в <span>нужном Вам вопросе</span></h4>
+			</div>
+			<p elem="text">
+				в каждой категории дел есть свои нюансы, познаваемые только на практике. Арбитражные споры отличаются от уголовных, бракоразводные — от наследственных.
+			</p>
+		</div>
+	</div>
+	<div elem="buttons">
+		{% include 'check-button.html' %}
+		{% include 'lawyer-button.html' %}
+	</div>
+</div><!-- choose-lawyer -->

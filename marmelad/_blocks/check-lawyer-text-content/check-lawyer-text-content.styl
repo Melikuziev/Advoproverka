@@ -1,0 +1,80 @@
+.check-lawyer-text-content
+	&__item
+		display flex
+		margin-bottom 24px
+		position relative
+		&:last-child
+			margin-bottom 20px
+
+	&__number
+		width 28px
+		height 28px
+		flex 0 0 auto
+		display flex
+		margin 0px 10px 0px 0px
+		position relative
+		// &--line
+		// 	&:before
+		// 		content ''
+		// 		position absolute
+		// 		top 100%
+		// 		left 50%
+		// 		width 1px
+		// 		height 100%
+		// 		background-color #66727F
+
+	&__icon
+		vertical-align top
+		border-radius 5px
+
+	&__title
+		font-size 18px
+		line-height 120%
+		margin 0 0 10px 0
+
+	&__text
+		line-height 140%
+		margin 0
+
+		&--text-margin
+			margin-bottom 22px
+
+	&__list
+		list-style none
+		margin 0
+		padding 0
+
+	&__list-item
+		margin-bottom 10px
+		display flex
+		line-height 140%
+		&:last-child
+			margin-bottom 0
+
+	&__list-icon
+		margin-top 5px
+		margin-right 8px
+		width 10px
+		height 10px
+		flex 0 0 auto
+
+@media (min-width: 768px)
+	.check-lawyer-text-content
+		&__title
+			line-height 150%
+			margin 0px 0px 16px 0px
+
+		&__text
+			line-height 150%
+
+		&__list
+			display flex
+
+		&__left-side
+			margin-right 20px
+
+@media (min-width: 1000px)
+	.check-lawyer-text-content
+		&__item
+			&:last-child
+				margin-bottom 0

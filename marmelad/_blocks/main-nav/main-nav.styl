@@ -1,0 +1,43 @@
+.main-nav
+	display none
+
+	&__items
+		margin 0
+		padding 0
+		list-style none
+		display flex
+
+	&__item
+		margin-right 15px
+		&:last-child
+			margin-right 0
+
+	&__link
+		padding 10px 10px
+		text-decoration none
+		font-weight 400
+		font-size 16px
+		line-height 140%
+		color #FFFFFF
+		&:hover span:before
+			visibility visible
+			opacity 1
+		span
+			display inline-block
+			position relative
+			&:before
+				content ''
+				transition all .3s ease
+				bottom -3px
+				left -2px
+				right -2px
+				position absolute
+				height 1px
+				background-color #fff
+				display block
+				visibility hidden
+				opacity 0
+
+@media (min-width: 1000px)
+	.main-nav
+		display block

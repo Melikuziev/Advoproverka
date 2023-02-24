@@ -1,0 +1,86 @@
+.choose-lawyer
+	background-color #F2F8FC
+	padding-top 56px
+	padding-bottom 56px
+
+	&__item
+		display flex
+		flex-direction column
+		background-color #fff
+		border-radius 10px
+		padding 20px 20px 20px 20px
+		margin-bottom 20px
+		&:last-child
+			margin-bottom 40px
+
+	&__header
+		display flex
+		margin-bottom 10px
+		align-items center
+
+	&__icon
+		height 55px
+		width 55px
+		flex 0 0 auto
+		margin-right 10px
+
+	&__title
+		font-size 17px
+		line-height 120%
+		margin 0
+		span
+			color #1E3685
+
+	&__text
+		color #000
+		line-height 140%
+		margin 0
+
+@media (min-width: 360px)
+	.choose-lawyer
+		&__title
+			font-size 18px
+
+@media (min-width: 768px)
+	.choose-lawyer
+		&__icon
+			margin-right 15px
+			width 68px
+			height 68px
+
+		&__title
+			line-height 150%
+
+		&__text
+			line-height 150%
+
+		&__item
+			margin-bottom 24px
+
+		&__buttons
+			display flex
+			flex-direction row
+			justify-content center
+			align-items center
+
+		.check-button
+			margin-bottom 0
+			margin-right 30px
+
+@media (min-width: 1200px)
+	.choose-lawyer
+		&__items
+			display grid
+			grid-template-columns 1fr 1fr 1fr
+			column-gap 16px
+			margin-bottom 40px
+
+		&__item
+			margin-bottom 0
+			&:last-child
+				margin-bottom 0
+
+.full-bleed
+	box-shadow 0 0 0 100vmax #f2f8fc
+	clip-path inset(0 -100vmax)
+
