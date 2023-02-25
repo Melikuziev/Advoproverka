@@ -1,0 +1,48 @@
+---
+# JS-YAML demo
+# https://nodeca.github.io/js-yaml/
+page:
+  title: Тарифы
+  path: [
+  	{
+  		item: "Главная"
+  	}
+  ]
+  layout:
+    header: true
+    headerMods: 'bgNone'
+    footer: true
+    left: false
+    right: false
+	crumbs: !!seq
+	- home
+body:
+	classes: home
+---
+
+{% extends 'app.html' %}
+
+{% block inlineStyles %}
+	<style>
+	</style>
+{% endblock %}
+
+{% block main %}
+
+<section>
+	{% include 'rates-intro.html' %}
+</section>
+
+<section>
+	{% include 'rates-service.html' %}
+</section>
+
+<section>
+	{% include 'rates-important-know.html' %}
+</section>
+
+<section>
+	{% include 'faq.html' %}
+</section>
+
+{% endblock %}

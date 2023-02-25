@@ -1,0 +1,101 @@
+.rates-service
+	&__contentBx
+		margin 0px 0px 20px 0px
+
+	&__accordion
+		cursor pointer
+		background-color #fff
+		border 1px solid #0263B2
+		display flex
+		align-items center
+		text-align left
+		border-radius 5px
+		padding 10px
+		width 100%
+		font-family 'Play'
+		font-weight 700
+		font-size 14px
+		line-height 26px
+		color #0263B2
+		transition .3s
+
+	&__icon
+		width 24px
+		height 24px
+		flex 0 0 auto
+		margin-right 10px
+
+	&__panel
+		display none
+		background-color #f2f8fc
+		padding 20px 10px 10px 10px
+		border-radius 5px
+
+	&__service-title
+		margin 0px 0px 20px 0px
+		text-align center
+		font-family 'Play'
+		font-size 24px
+		line-height 26px
+		color #B20237
+
+	&__list
+		list-style none
+		margin 0px 0px 0px 0px
+		padding 0px 0px 0px 0px
+
+	&__item
+		display flex
+		margin 0px 0px 10px 0px
+		&:last-child
+			margin 0px 0px 28px 0px
+
+	&__item-icon
+		margin 0px 10px 0px 0px
+		align-self center
+		height 18px
+		width 18px
+		flex 0 0 auto
+		&--icon
+			width 16px
+			height 16px
+
+	&__item-text
+		font-family 'Play'
+		font-size 14px
+		line-height 26px
+
+	&__last-text
+		padding 10px 10px 10px 25px
+		background-color #fff
+		border-radius 5px
+		margin 0px -10px 0px -10px
+
+	&__text
+		font-family 'Play'
+		font-size 12px
+		line-height 22px
+		margin 0px 0px 0px 0px
+		&:first-child
+			margin 0px 0px 20px 0px
+		&--red-text
+			color #B20237
+
+@media (min-width: 768px)
+	.rates-service
+		&__accordion
+			padding 20px
+			font-size 16px
+
+		&__service-title
+			font-size 26px
+
+		&__item
+			margin 0px 0px 15px 0px
+
+		&__item-text
+			font-size 16px
+			line-height 27px
+
+		&__text
+			font-size 15px

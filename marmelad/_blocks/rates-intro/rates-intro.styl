@@ -1,0 +1,70 @@
+.rates-intro
+	margin 0px 0px 20px 0px
+	&__img-content
+		display flex
+		justify-content center
+		margin 0px 0px 10px 0px
+
+	&__img
+		width 100%
+		vertical-align top
+
+	&__text-content
+		display flex
+		flex-direction column
+
+	&__title
+		font-family 'Play'
+		font-size 24px
+		line-height 28px
+		text-align center
+		color #181818
+		margin 0px 0px 10px 0px
+		span
+			color #0263B2
+
+	&__subtitle
+		font-family 'Play'
+		font-size 14px
+		line-height 24px
+		text-align center
+		color #181818
+		margin 0px 0px 10px 0px
+
+@media (min-width: 768px)
+	.rates-intro
+		display flex
+		flex-direction row-reverse
+		justify-content space-between
+
+		&__text-content
+			width 100%
+			max-width 350px
+
+		&__title
+			text-align left
+			font-size 30px
+			line-height 30px
+
+		&__subtitle
+			text-align left
+			font-size 16px
+			margin 0px 0px 15px 0px
+
+@media (min-width: 1000px)
+	.rates-intro
+		margin 0px 0px 30px 0px
+		&__text-content
+			max-width 470px
+
+		&__title
+			margin 0px 0px 20px 0px
+
+		&__subtitle
+			margin 0px 0px 50px 0px
+
+@media (min-width: 1200px)
+	.rates-intro
+		&__title
+			font-size 36px
+			line-height 42px
