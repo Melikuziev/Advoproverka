@@ -1,20 +1,27 @@
 <div block="main-inner">
 	<div elem="content">
-		<div elem="title-content">
-			<h3 elem="text">автономная некоммерческая организация</h3>
+
+		<div elem="header">
+			<p elem="text">автономная некоммерческая организация</p>
 			<h1 elem="title">Национальная рейтинговая юридическая система</h1>
 		</div>
-		<div elem="subtitle-content">
-			<div elem="subtitle">
-				<img elem="icon" src="img/check-icon.svg" alt="check-icon">
-				<span>Подбор адвокатов по&nbsp;специализации</span>
+
+		<div elem="text-d-flex">
+			<div elem="text-content">
+				<div elem="wrapper">
+					<img elem="wrapper-icon" src="img/check-icon.svg" alt="check-icon">
+					<p elem="wrapper-text">Подбор адвокатов по специализации</p>
+				</div>
+				<div elem="wrapper">
+					<img elem="wrapper-icon" src="img/check-icon.svg" alt="check-icon">
+					<p elem="wrapper-text">Проверка результатов адвокатов по базам судебных решений</p>
+				</div>
 			</div>
-			<div elem="subtitle">
-				<img elem="icon" src="img/check-icon.svg" alt="check-icon">
-				<span>Проверка результатов адвокатов по&nbsp;базам судебных решений</span>
-			</div>
+			{% include 'buttons.html' %}
 		</div>
-		{% include 'buttons.html' %}
+
+		{% include 'img-content-1.html' %}
+
 	</div>
-	{% include 'img-content-1.html' %}
+	{% include 'img-content-1-clone.html' %}
 </div><!-- main-inner -->
