@@ -1778,6 +1778,9 @@ body {
   .main-inner__text-content {
     flex-direction: row;
   }
+  .main-inner__text {
+    width: 108%;
+  }
   .main-nav {
     display: block;
   }
@@ -1897,11 +1900,17 @@ body {
   .main-inner {
     padding: 0px 0px 103px 0px;
   }
+  .main-inner__content {
+    padding: 0px 0px 0px 0px;
+  }
   .main-inner__header {
     margin: 0px 0px 34px 0px;
   }
   .main-inner__title {
     font-size: 51px;
+  }
+  .main-inner__text {
+    width: 100%;
   }
   .ranking-system__title {
     margin: 0px 0px 40px 0px;
