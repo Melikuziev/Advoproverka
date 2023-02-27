@@ -8,36 +8,37 @@
 		margin 0 0 30px 0
 
 	&__item
-		display flex
-		flex-direction column
+		margin 0px 0px 20px 0px
+
+	&__item
 		background-color #fff
 		border-radius 10px
 		padding 20px
-		margin-bottom 20px
-
-	&__header
 		display flex
-		margin-bottom 10px
+		flex-wrap wrap
+		column-gap 10px
+		row-gap 10px
 		align-items center
 
-	&__icon
-		width 63px
-		height 63px
-		flex 0 0 auto
-		margin-right 10px
+	&__item-icon
+		width 100%
+		max-width 65px
+		max-height 65px
+		flex 1 1 21%
+		vertical-align top
 
 	&__title
-		font-size 17px
+		flex 1 1 74%
+		font-size 20px
 		line-height 120%
-		margin 0
-		color #B20237
+		color #b20237
+		margin 0px 0px 0px 0px
 		span
 			color #000
 
 	&__text
-		color #000
 		line-height 140%
-		margin 0
+		margin 0px 0px 0px 0px
 
 	&__outro
 		background-color #fff
@@ -45,9 +46,9 @@
 		padding 20px
 		border-radius 10px
 		align-items center
+		gap 10px
 
 	&__outro-icon
-		margin-right 10px
 		flex 0 0 auto
 
 	&__outro-text
@@ -58,8 +59,12 @@
 
 @media (min-width: 360px)
 	.choose-lawyer-right
+
+		&__item-icon
+			flex 1 1 25%
+
 		&__title
-			font-size 18px
+			flex 1 1 70%
 
 		&__outro-text
 			font-size 18px
@@ -67,24 +72,29 @@
 @media (min-width: 768px)
 	.choose-lawyer-right
 		&__item
-			margin-bottom 24px
-			padding 24px 29px
+			padding 24px 30px
+			display block
+			position relative
+			margin 0px 0px 24px 0px
 
-		&__icon
-			width 88px
-			height 88px
+		&__item-icon
+			position absolute
+			top 50%
+			transform translateY(-50%)
+			max-width 90px
+			max-height 90px
+
+		&__title,
+		&__text
+			padding-left 114px
+			line-height 150%
 
 		&__title
-			line-height 150%
+			margin-bottom 10px
 
-		&__text
-			line-height 150%
-
-		&__buttons
-			display flex
-			flex-direction row
-			justify-content center
-			align-items center
+		&__icon
+			width 90px
+			height 90px
 
 		&__outro-text
 			line-height 150%
@@ -97,4 +107,3 @@
 .full-blue
 	box-shadow 0 0 0 100vmax #0263B2
 	clip-path inset(0 -100vmax)
-
