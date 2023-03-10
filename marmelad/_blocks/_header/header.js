@@ -1,6 +1,9 @@
 const header = document.querySelector('#header')
 
-window.addEventListener("scroll", function() {
+window.addEventListener("scroll", checkScroll);
+document.addEventListener("DOMContentLoaded", checkScroll);
+
+function checkScroll() {
 
 	let scrollPos = window.scrollY;
 
@@ -9,4 +12,4 @@ window.addEventListener("scroll", function() {
 	} else {
 		header.classList.remove('shadow');
 	}
-});
+}

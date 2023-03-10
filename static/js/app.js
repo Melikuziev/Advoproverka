@@ -28,7 +28,10 @@ if (window.NodeList && !NodeList.prototype.forEach) {
 
 
 const header = document.querySelector('#header');
-window.addEventListener("scroll", function () {
+window.addEventListener("scroll", checkScroll);
+document.addEventListener("DOMContentLoaded", checkScroll);
+
+function checkScroll() {
   let scrollPos = window.scrollY;
 
   if (scrollPos > 0) {
@@ -36,7 +39,8 @@ window.addEventListener("scroll", function () {
   } else {
     header.classList.remove('shadow');
   }
-});
+}
+
 var acc = document.getElementsByClassName("faq__accordion");
 var i;
 
